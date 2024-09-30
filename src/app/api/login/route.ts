@@ -5,15 +5,16 @@ import bcrypt from "bcrypt"
 import jwt from "jsonwebtoken"
 import connectToDatabase from "../dataBase/connectToDatabase"
 
+import connect from "../dataBase2/testeConnect"
+import Post from "../../../../models/login/Post"
+
 const POST = async (request: NextRequest) => {
   try {
     const { email, password } = await request.json()
 
-    const db = await connectToDatabase(process.env.DB_HOST ?? "")
+    await connect()
 
-    const collection = db.collection("users")
-
-    const user = await collection.findOne({ email })
+    const user = await Post.findOne({ email })
 
     if (!user) {
       return Response.json(

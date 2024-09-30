@@ -1,7 +1,7 @@
-export default function Home() {
+export default function Private() {
   return (
     <div className="w-full max-w-screen-xl h-screen flex justify-center items-center">
-      <span>Pagina Inicial</span>
+      <h1>Private Page</h1>
     </div>
   )
 }

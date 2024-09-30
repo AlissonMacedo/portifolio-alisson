@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@hookform/resolvers": "^3.9.0",
     "@types/bcrypt": "^5.0.2",
     "@types/jsonwebtoken": "^9.0.6",
     "@types/lodash": "^4.17.7",
@@ -19,11 +20,14 @@
     "jsonwebtoken": "^9.0.2",
     "lodash": "^4.17.21",
     "mongobd": "^0.0.1-security.0",
+    "mongoose": "^8.6.1",
     "next": "14.2.6",
     "next-auth": "^4.24.7",
     "react": "^18",
     "react-dom": "^18",
-    "sass": "^1.77.8"
+    "react-hook-form": "^7.53.0",
+    "styled-components": "^6.1.13",
+    "zod": "^3.23.8"
   },
   "devDependencies": {
     "@types/mongodb": "^4.0.7",
